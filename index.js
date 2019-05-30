@@ -7,7 +7,7 @@ const port = process.env.PORT || 3001;
 
 index.set('port', port);
 
-index.use('/', express.static(path.join(__dirname, '/bild')));
+index.use('/', express.static(path.join(__dirname, '/build')));
 
 /// ruta 0: /       "Hola"
 

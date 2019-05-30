@@ -4,11 +4,12 @@
   "description": "Backend side from our final project, where the client is Wakyma.",
   "main": "index.js",
   "scripts": {
+    "start": " node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
     "node": "10.13.0"},
-    
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rakelqr/wakyma_wcs.git"
