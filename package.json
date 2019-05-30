@@ -1,0 +1,25 @@
+{
+  "name": "wakyma_wcs",
+  "version": "1.0.0",
+  "description": "Backend side from our final project, where the client is Wakyma.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "10.13.0"},
+    
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakelqr/wakyma_wcs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakelqr/wakyma_wcs/issues"
+  },
+  "homepage": "https://github.com/rakelqr/wakyma_wcs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
