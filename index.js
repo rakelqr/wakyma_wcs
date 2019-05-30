@@ -2,10 +2,10 @@ const express = require('express');
 const index = express();
 const path = require('path')
 const listVeterinaries = require('./veterinary.json').results;
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 
-index.set('port', port)
+index.set('port', port);
 
 index.use('/', express.static(path.join(__dirname, '/bild')));
 
