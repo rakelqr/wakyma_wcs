@@ -7,13 +7,9 @@ const port = process.env.PORT || 3001;
 
 server.set('port', port);
 
-server.use('/', express.static(path.join(__dirname, '/build')));
-
 /// ruta 0: /       "Hola"
 
-server.get('/', () => {
-    req.send('Hola')
-})
+server.use('/', express.static(path.join(__dirname, '/build')));
 
 /// ruta 1: /api                devuelve "Lista de APIs"
 
