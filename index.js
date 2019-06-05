@@ -24,7 +24,7 @@ server.get('/api',(req, res) => {
 
 server.get('/api/veterinary', (req,res) => {
     //res.json(listVeterinaries)
-    Veterinary.find({}, (err, result) => {
+    Veterinary.find(req.query, (err, result) => {
         if (err) console.log(err)
         res.json(result)
     } )
@@ -37,7 +37,7 @@ server.get('/api/veterinary/:objectId', (req, res) => {
     // res.json(listVeterinaries.find(v=> v.objectId === req.params.objectId))
     Veterinary.find({objectId: req.params.objectId}, (err, result) => {
         if (err) console.log(err)
-        res.json(result)
+        res.json(result[0])
     } )
 });
 
